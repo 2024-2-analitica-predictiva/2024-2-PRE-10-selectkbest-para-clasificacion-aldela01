@@ -239,6 +239,13 @@ def train_mlp_classifier():
 
     train_estimator(estimator)
 
+import time
+
+start = time.time()
 
 train_mlp_classifier()
 check_estimator()
+
+end = time.time()
+
+print(f"Time elapsed: {end - start:.2f} seconds")
